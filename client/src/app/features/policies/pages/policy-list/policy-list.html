@@ -1,0 +1,16 @@
+<div class="policy-container">
+    <h2>Policy Details</h2>
+    @if (policies.length > 0) {
+    @for (policy of policies; track policy.policyNumber) {
+    <div class="policy-card">
+        <p><strong>Policy Number:</strong> {{ policy.policyNumber }}</p>
+        <p><strong>Customer Name:</strong> {{ policy.customerName }}</p>
+        <p><strong>Policy Type:</strong> {{ policy.policyType }}</p>
+        <p><strong>Premium:</strong> {{ policy.premium }}</p>
+        <p><strong>Status:</strong> {{ policy.status }}</p>
+    </div>
+    }
+    } @else {
+    <p>No policies available.</p>
+    }
+</div>

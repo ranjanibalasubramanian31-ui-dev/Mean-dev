@@ -1,0 +1,89 @@
+:host {
+    display: block;
+}
+
+.policy-page {
+    min-height: 100vh;
+    padding: 2rem;
+    background: #f4f6f9;
+}
+
+.form-card {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 8%);
+}
+
+header {
+    margin-bottom: 2rem;
+
+    h1 {
+        margin: 0.25rem 0;
+    }
+
+    p {
+        color: #52606d;
+    }
+}
+
+.eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+form {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.form-field {
+    display: grid;
+    gap: 0.4rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+select {
+    padding: 0.75rem;
+    border: 1px solid #b8c1cc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus,
+select:focus {
+    border-color: #005ea8;
+    outline: 2px solid rgb(0 94 168 / 15%);
+}
+
+button {
+    padding: 0.8rem 1.25rem;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    background: #005ea8;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.error,
+.error-message {
+    color: #b42318;
+}
+
+.success {
+    color: #067647;
+}
